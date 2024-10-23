@@ -1,0 +1,25 @@
+{
+  "name": "wavebeat",
+  "version": "1.0.0",
+  "description": "Online Music Player WaveBeat i a sleek ,online music player designed to bring you closer to the beats you love. Whether your chilling at home 😎 or working out 🏋🏿,enjoy seamless listening with a modern minimalist interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "OnlyBel",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.25.8",
+    "@babel/preset-env": "^7.25.8",
+    "@babel/preset-react": "^7.25.7",
+    "babel-loader": "^9.2.1",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
