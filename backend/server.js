@@ -1,10 +1,8 @@
 const express = require('express');
 const path = require('path');
-const fs = require('fs');
 const cors = require('cors');
-
 const app = express();
-const port = process.env.PORT || 3001;
+const port = 5000;
 
 //enable CORS for all routes
 app.use(cors());
@@ -12,7 +10,7 @@ app.use(cors());
 //serve static files from the 'public' directory
 app.use('/static', express.static(path.join(__dirname, 'public')));
 
-//sample song data (in a real app)
+//sample song data (in Spotify app)
 const songs = [
 	{id: 1, title: "Nitangoja", artist: "Kinoti", src: "https://open.spotify.com/track/21eRcBcsRtuHjL2jSeMu7A?si=50250cfc3d464322"},
 	{id: 2, title: "Aki Sioni", artist: "Njerae", src: "https://open.spotify.com/track/0U9jyVnEkmWryh7sJpMS5e?si=6df779a3e3b14aae"},

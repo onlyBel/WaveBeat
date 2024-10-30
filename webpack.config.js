@@ -7,9 +7,8 @@ module.exports = {
     filename: 'bundle.js'
   },
   devServer: {
-    server: 'http',
     host: 'localhost',
-    port: 3001, //change to an available port
+    port: 3001,
     static: {
       directory: path.join(__dirname, 'dist')
     },
@@ -22,6 +21,14 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: 'babel-loader'
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader'
+        ]
       }
     ]
   },
@@ -29,4 +36,5 @@ module.exports = {
     extensions: ['.js', '.jsx']
   }
 };
+
 
