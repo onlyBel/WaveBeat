@@ -1,12 +1,13 @@
 {
   "name": "wavebeat",
   "version": "1.0.0",
+  "private": true,
   "description": "Online Music Player WaveBeat i a sleek ,online music player designed to bring you closer to the beats you love. Whether your chilling at home 😎 or working out 🏋🏿,enjoy seamless listening with a modern minimalist interface.",
   "main": "index.js",
   "scripts": {
     "dev": "concurrently \"next dev\" \"node server.js\"",
     "build": "next build",
-    "start": "concurrently \"next start\" \"node server.js\""
+    "start": "next start"
   },
   "keywords": [],
   "author": "OnlyBel",
@@ -16,7 +17,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.21.1",
-    "mongoose": "^8.8.0",
+    "mongoose": "^8.8.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.3.0"
@@ -26,6 +27,7 @@
     "@babel/preset-env": "^7.25.8",
     "@babel/preset-react": "^7.25.7",
     "babel-loader": "^9.2.1",
+    "concurrently": "^9.1.0",
     "nodemon": "^3.1.7",
     "sass": "^1.80.4",
     "sass-loader": "^16.0.2",

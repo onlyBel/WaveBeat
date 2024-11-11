@@ -1,0 +1,33 @@
+
+> wavebeat@1.0.0 dev
+> concurrently "next dev" "node server.js"
+
+[0] /bin/sh: 1: next: not found
+[0] next dev exited with code 127
+[1] node:events:485
+[1]       throw er; // Unhandled 'error' event
+[1]       ^
+[1] 
+[1] Error: listen EADDRINUSE: address already in use :::5000
+[1]     at Server.setupListenHandle [as _listen2] (node:net:1905:16)
+[1]     at listenInCluster (node:net:1962:12)
+[1]     at Server.listen (node:net:2064:7)
+[1]     at Function.listen (/WaveBeat/node_modules/express/lib/application.js:635:24)
+[1]     at Object.<anonymous> (/WaveBeat/server.js:46:5)
+[1]     at Module._compile (node:internal/modules/cjs/loader:1568:14)
+[1]     at Object..js (node:internal/modules/cjs/loader:1711:10)
+[1]     at Module.load (node:internal/modules/cjs/loader:1328:32)
+[1]     at Function._load (node:internal/modules/cjs/loader:1138:12)
+[1]     at TracingChannel.traceSync (node:diagnostics_channel:315:14)
+[1] Emitted 'error' event on Server instance at:
+[1]     at emitErrorNT (node:net:1941:8)
+[1]     at process.processTicksAndRejections (node:internal/process/task_queues:90:21) {
+[1]   code: 'EADDRINUSE',
+[1]   errno: -98,
+[1]   syscall: 'listen',
+[1]   address: '::',
+[1]   port: 5000
+[1] }
+[1] 
+[1] Node.js v23.0.0
+[1] node server.js exited with code 1
